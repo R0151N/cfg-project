@@ -27,21 +27,57 @@
             <button class="btn" onclick="filterSelection('disney')"> Disney+</button>
             <button class="btn" onclick="filterSelection('netflix')"> Netflix</button>
             <button class="btn" onclick="filterSelection('nowtv')"> Now TV</button>
+            <button class="btn" onclick="filterSelection('series')"> Series</button>
+            <button class="btn" onclick="filterSelection('film')"> Film</button>
+            <button class="btn" onclick="filterSelection('comedy')"> Comedy</button>
+            <button class="btn" onclick="filterSelection('period')"> Period Drama</button>
+            <button class="btn" onclick="filterSelection('comic')"> Comic Book</button>
+            <button class="btn" onclick="filterSelection('drama')"> Drama</button>
+            <button class="btn" onclick="filterSelection('childrens')"> Childrens</button>
+            <button class="btn" onclick="filterSelection('musical')"> Musical</button>
+            <button class="btn" onclick="filterSelection('action')"> Action</button>
+            <button class="btn" onclick="filterSelection('fantasy')"> Fantasy</button>
         </div>
   
         <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
         <div class="filterContainer">
-            <div class="filterDiv disney">
+            <div class="filterDiv britbox series drama">
                 <div class="posterContent">
-                    <img src="./Images/Loki Poster.jpg" alt="Loki" class="image" style="width:100%">
+                    <img src="./Images/Posters/Endeavour Poster.jpg" alt="Endeavour" class="image" style="width: 100%">
                     <div class="middle">
-                        <div class="text">Loki (2021)</div>
+                        <div class="text">
+                           <!-- Button trigger modal -->
+                           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Endeavour">
+                            Endeavour<br>(2012)
+                            </button> 
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="filterDiv britbox">
+            <div class="filterDiv nowtv series fantasy">
                 <div class="posterContent">
-                    <img src="./Images/Endeavour Poster.jpg" alt="Endeavour" class="image" style="width: 100%">
+                    <img src="./Images/Posters/Game of Thrones Poster.jpg" alt="Game of Thrones" class="image" style="width: 100%">
+                    <div class="middle">
+                        <div class="text">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#GoT">
+                                Game of Thrones<br>(2011)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv disney series comic action">
+                <div class="posterContent">
+                    <img src="./Images/Posters/Loki Poster.jpg" alt="Loki" class="image" style="width:100%">
+                    <div class="middle">
+                        <div class="text">
+                           <!-- Button trigger modal -->
+                           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Loki">
+                            Loki<br>(2021)
+                            </button> 
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="filterDiv netflix">Merlin</div>
@@ -51,19 +87,6 @@
             <div class="filterDiv britbox">Doctor Who</div>
             <div class="filterDiv netflix">Rocketman</div>
             <div class="filterDiv amazon">Vikings</div>
-            <div class="filterDiv nowtv">
-                <div class="posterContent">
-                    <img src="./Images/GoT Poster.jpg" alt="Game of Thrones" class="image" style="width: 100%">
-                    <div class="middle">
-                        <div class="text">
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                                Game of Thrones<br>(2011)
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="filterDiv disney">The Simpsons</div>
             <div class="filterDiv britbox netflix amazon">Downton Abbey</div>
             <div class="filterDiv netflix britbox amazon">The Guernsey Literary & Potato Peel Pie Society</div>
@@ -71,7 +94,28 @@
         <!--End Filter-->
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <!--Endeavour-->
+        <div class="modal fade" id="Endeavour" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Endeavour (2012)</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Set from 1965 to 1971, the show follows Endeavour Morse in his early years as a police constable. Working alongside his senior partner DI Fred Thursday, Morse engages in a number of investigations around Oxford.<br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Njj6I6f-fCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        Available to stream on <sp> </sp> <a href="https://www.britbox.co.uk/programme/Endeavour_36831"> BritBox</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Game Of Thrones-->
+        <div class="modal fade" id="GoT" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -90,6 +134,27 @@
                 </div>
             </div>
         </div>
+        <!--Loki-->
+        <div class="modal fade" id="Loki" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Loki (2021)</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        The mercurial villain Loki resumes his role as the God of Mischief in a new series that takes place after the events of “Avengers: Endgame.”<br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nW948Va-l10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        Available to stream on <sp> </sp> <a href="https://www.disneyplus.com/series/loki/6pARMvILBGzF"> Disney+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 
     </main>
     <footer>
