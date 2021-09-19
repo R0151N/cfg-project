@@ -4,8 +4,9 @@
 }
 
 body {
-    background-color: #f1f1f1;
+    background-color: black;
     padding: 20px;
+    color: white;
     font-family: Arial;
 } 
 img {
@@ -70,10 +71,31 @@ img {
     background-color: #f1f1f1;
     cursor: pointer;
 }
+
+.btn-site {
+    background-color: cornflowerblue;
+}
+
+.btn-type {
+    background-color: lightcoral;
+}
+
+.btn-genre {
+    background-color: lightseagreen;
+}
+
+.btn-primary {
+    background-color: slategrey;
+    color: white;
+}
   
 /* Add a light grey background on mouse-over */
 .btn:hover {
     background-color: #ddd;
+}
+
+.btn-primary:hover {
+    color: black;
 }
   
 /* Add a dark background to the active button */
@@ -123,8 +145,12 @@ img {
 }
   
 .text {
-    background-color: #4CAF50;
-    color: white;
+    background-color: black;
+    color:white;
     font-size: 16px;
     padding: 16px 32px;
+}
+
+.modal-content {
+    background-color: grey;
 }
