@@ -45,22 +45,35 @@
             </a>
           </div>
 
-        <div>
-            <h3>About Team Hopper</h3>
-            <!--Link to about the team page? Include sort info about each of us?-->
-            <p>Text about why we chose Hopper as the team name - Grace Hopper</p>
+        <!--Expanding Grid - https://www.w3schools.com/howto/howto_js_expanding_grid.asp--> 
+        <!-- The grid: three columns -->
+        <div class="row">
+          <div class="column" onclick="openTab('b1');" style="background:black;">About Team Hopper</div>
+          <div class="column" onclick="openTab('b2');" style="background:black;">About the Website</div>
+          <div class="column" onclick="openTab('b3');" style="background:black;">Sign Up</div>
         </div>
-        <div>
-            <h2>Website Title</h2>
-            <p>Text about the website - it's a database of films, tv shows, documentaries that are available across streaming sites.</p>
+
+        <!-- The expanding grid (hidden by default) -->
+        <div id="b1" class="containerTab" style="display:none;background: grey">
+          <!-- If you want the ability to close the container, add a close button -->
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+          <h2>About Team Hopper</h2>
+          <p>Text about why we chose Hopper as the team name - Grace Hopper</p>
         </div>
-        <div>
-            <h3>Sign Up Form</h3>
-            <p>We would love if you could join us.</p>
-            <p><a href="./HTML sign up form.html" target="_blank">Click here</a> to sign up.</p>
-            <!--Sign up form - https://www.w3schools.com/howto/howto_css_signup_form.asp-->
-            <!--Maybe the sign up form could appear as a pop-up e.g. click here to sign up-->
+
+        <div id="b2" class="containerTab" style="display:none;background:grey">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+          <h2>About the Website</h2>
+          <p>Text about the website - it's a database of films, tv shows, documentaries that are available across streaming sites.</p>
         </div>
+
+        <div id="b3" class="containerTab" style="display:none;background:grey">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+          <h2>Sign Up</h2>
+          <p>We would love if you could join us.</p>
+          <p><a href="./HTML sign up form.html" target="_blank">Click here</a> to sign up.</p>
+        </div> 
+        
     </main>
     <footer>
         <p>Created by Team Hopper via CFG 2021</p>

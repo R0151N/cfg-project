@@ -20,6 +20,39 @@ img {
     margin: auto;
 }
 
+/*HOME PAGE*/
+/*Expanding Grid*/
+/* The grid: Three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .containerTab {
+    padding: 20px;
+    color: white;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
 /*PAGE 2*/
 /*Filter*/
 .filterContainer {
@@ -36,7 +69,7 @@ img {
  
 .filterDiv {
     float: left;
-    background-color: #2196F3;
+    background-color:white;
     color: #ffffff;
     width: 16.666%; /*CHANGE FOR MOBILE*/
     line-height: 100px;
