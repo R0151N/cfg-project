@@ -12,7 +12,12 @@
 </head>
 <body>
     <header>
-        <h1>Nav Bar</h1>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="page2.html">Demo</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="HTML sign up form.html" target="_blank">Sign Up</a>
+        </div>
     </header>
     <main>
         <!--Cards - https://getbootstrap.com/docs/4.0/components/card/-->
@@ -21,7 +26,7 @@
         <!--Filter - https://www.w3schools.com/howto/howto_js_filter_elements.asp-->
         <!-- Control buttons -->
         <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn active btn-all" onclick="filterSelection('all')"> Show all</button>
             <button class="btn btn-site" onclick="filterSelection('amazon')"> Prime Video</button>
             <button class="btn btn-site" onclick="filterSelection('britbox')"> BritBox</button>
             <button class="btn btn-site" onclick="filterSelection('disney')"> Disney+</button>

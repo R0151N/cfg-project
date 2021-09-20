@@ -135,16 +135,23 @@ img {
     cursor: pointer;
 }
 
+.btn-all {
+    margin-top: 70px;
+}
+
 .btn-site {
     background-color: cornflowerblue;
+    margin-top: 70px;
 }
 
 .btn-type {
     background-color: lightcoral;
+    margin-top: 70px;
 }
 
 .btn-genre {
     background-color: lightseagreen;
+    margin-top: 70px;
 }
 
 .btn-primary {
@@ -165,6 +172,7 @@ img {
 .btn.active {
     background-color: #666;
     color: white;
+    margin-top: 70px;
 }
 /*End Filter*/
 
