@@ -117,7 +117,7 @@
             <p>In her final year of BSc Mathematics at the Open University.</p>
             <p>Currently working as a Student Recruitment Administrator but her goal is to pursue a career in technology after finishing her degree.</p>
             <p>Rosie@outlook.com</p>
-            <p><button class="button">Contact</button></p>
+            <input type="button" onclick="window.open('mailto:Rosie@outlook.com?subject=Enquiry');" value="Contact" />
           </div>
         </div>
       </div>
@@ -126,9 +126,9 @@
           <div class="container">
             <h2>Boluwatife</h2>
             <p>In her final year of LLB Law.</p>
-            <p>Currently getting hands-on experience in programming in order to icrease career opportunities.</p>
+            <p>Currently getting hands-on experience in programming in order to increase career opportunities.</p>
             <p>Boluwatife@outlook.com</p>
-            <p><button class="button">Contact</button></p>
+            <input type="button" onclick="window.open('mailto:Boluwatife@outlook.com?subject=Enquiry');" value="Contact" />
           </div>
         </div>
       </div>
@@ -139,7 +139,7 @@
             <p>I have just gone into my fourth and final year at Heriot-Watt University where I study Geography.</p>
             <p>My interest in the tech world came about as a result of my current internship with a start up app development company.</p>
             <p>Louisa@outlook.com</p>
-            <p><button class="button">Contact</button></p>
+            <input type="button" onclick="window.open('mailto:Louisa@outlook.com?subject=Enquiry');" value="Contact" />
           </div>
         </div>
       </div>
@@ -150,14 +150,40 @@
            <p>I am a fourth year music student at the University of Edinburgh.</p>
             <p>Currently enrolled on a webdev course to increase my employability. </p>
             <p>Naomi@outlook.com</p>
-            <p><button class="button">Contact</button></p>
+            <input type="button" onclick="window.open('mailto:Naomi@outlook.com?subject=Enquiry');" value="Contact" />
           </div>
         </div>
       </div>
     </div>
   </main>
   <footer>
+    <input type="button" onclick=a href="#" id="back-to-top" class="back-to-top" style="display: inline;" value="Top"/>
     <p>Created by Team Hopper via CFG 2021</p>
   </footer>
+  <script>
+    var link = document.getElementById("back-to-top");
+    var amountScrolled = 250;
+    window.addEventListener('scroll', function(e) {
+        if ( window.pageYOffset > amountScrolled ) {
+            link.classList.add('show');
+        } else {
+            link.className = 'back-to-top';
+        }
+    }); 
+    //Scrolls to Top
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var distance = 0 - window.pageYOffset;
+        var increments = distance/(500/16);
+        function animateScroll() {
+            window.scrollBy(0, increments);
+            if (window.pageYOffset <= document.body.offsetTop) {
+                clearInterval(runAnimation);
+            }
+        };
+        // Loop the animation function
+        var runAnimation = setInterval(animateScroll, 16);
+    });
+  </script>
 </body>
 </html>
